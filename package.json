@@ -1,0 +1,36 @@
+{
+	"name": "html-css",
+	"version": "1.0.0",
+	"description": "A 2-week project (Feb 11 - Feb 27) focusing on clean, modular CSS using Sass and the 7-1 pattern, along with responsive design for adaptability.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel src/index.html",
+		"build": "parcel build src/index.html",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"parcel": "^2.13.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Code-by-zynn205/HTML-CSS.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Code-by-zynn205/HTML-CSS/issues"
+	},
+	"homepage": "https://github.com/Code-by-zynn205/HTML-CSS#readme",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@swc/core",
+			"lmdb",
+			"msgpackr-extract"
+		]
+	}
+}
