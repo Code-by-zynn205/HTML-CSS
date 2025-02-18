@@ -1,0 +1,10 @@
+@use "functions" as *;
+
+$primary-color: #007bff;
+$primary-hover: #0056b3;
+$text-color: rgba(0, 0, 0, 0.7);
+$header-bg: rgba(255, 255, 255, 0.9);
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+$main-spacing: pxToRem(0.58); 
