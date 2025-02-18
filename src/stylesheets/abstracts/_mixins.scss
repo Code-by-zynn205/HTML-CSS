@@ -1,7 +1,0 @@
-@use "variables" as *;
-
-@mixin responsive($size) {
-    @media screen and (max-width: $size) {
-        @content;
-    }
-}
