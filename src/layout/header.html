@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <span class="logo-text">Digital <span class="highlight">Agency</span></span>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <include src="components/navbar.html" locals='{"name":"Ana Sayfa", "className":"nav_link active"}'></include>
+                <include src="components/navbar.html" locals='{"name":"Kurumsal", "className":"nav_link"}'></include>
+                <include src="components/navbar.html" locals='{"name":"Neler Yapıyoruz?", "className":"nav_link"}'></include>
+                <include src="components/navbar.html" locals='{"name":"Blog", "className":"nav_link"}'></include>
+            </ul>
+        </nav>
+
+        <!-- Ngôn ngữ & Nút đăng nhập -->
+        <div class="auth-section">
+            <div class="language-switch">
+                <a href="#">EN</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn-login">Müşteri Girişi</a>
+            </div>
+            <div class="menu-icon">☰</div>
+        </div>
+    </div>
+</header>
