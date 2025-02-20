@@ -1,0 +1,8 @@
+{
+  "menu": [
+    { "name": "Ana Sayfa", "className": "nav_link active" },
+    { "name": "Kurumsal", "className": "nav_link" },
+    { "name": "Neler Yapıyoruz?", "className": "nav_link" },
+    { "name": "Blog", "className": "nav_link" }
+  ]
+}

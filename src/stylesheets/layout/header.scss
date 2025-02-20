@@ -40,35 +40,34 @@
     .logo {
         display: flex;
         align-items: center;
-
-        .logo-circle {
+    
+        &-circle {
             width: 35px;
             height: 35px;
             background-color: #007bff;
             border-radius: 50%;
             margin-right: 12px;
-
+    
             @include responsive(480px) {
                 width: 30px;
                 height: 30px;
             }
         }
-
-        .logo-text {
+    
+        &-text {
             font-weight: 600;
             font-size: 1.4rem;
             color: #000;
-
+    
             .highlight {
                 color: #007bff;
             }
-
+    
             @include responsive(480px) {
                 font-size: 1.2rem;
             }
         }
-    }
-
+    }    
     /* Navbar */
     .navbar {
         .nav-list {
