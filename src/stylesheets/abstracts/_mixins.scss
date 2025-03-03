@@ -5,3 +5,21 @@
         @content;
     }
 }
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin tablet {
+    @include responsive($tablet) {
+        @content;
+    }
+}
+@mixin mobile {
+    @include responsive($mobile) {
+        @content;
+    }
+}
+
+  

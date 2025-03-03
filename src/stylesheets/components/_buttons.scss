@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px ;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, white);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background-color: darken(map-get($colors, primary), 10%);
+    }
+}
