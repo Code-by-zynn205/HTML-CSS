@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+@forward "buttons";
+@forward "alerts";
+@forward "buttons";
+@forward "cards";
+@forward "forms";
+@forward "modals";
+@forward "highlig_title";
+@forward "description";
+@forward "title";
+.container {
+
+  @include tablet {
+    max-width: 720px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+    max-width: inherit;
+  }
+}
