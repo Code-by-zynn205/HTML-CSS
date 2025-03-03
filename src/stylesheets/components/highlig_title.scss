@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+.highlight--blue { 
+    color: map-get($colors, primary); 
+}
+.highlight--purple { 
+    color: map-get($colors, secondary); 
+}

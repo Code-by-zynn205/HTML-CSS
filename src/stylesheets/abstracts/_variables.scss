@@ -1,5 +1,4 @@
 @use "functions" as *;
-
 $primary-color: #007bff;
 $primary-hover: #0056b3;
 $text-color: rgba(0, 0, 0, 0.7);
@@ -8,3 +7,12 @@ $desktop: 1024px;
 $tablet: 768px;
 $mobile: 480px;
 $main-spacing: pxToRem(0.58); 
+$colors: (
+  primary: #4a90e2,
+  secondary: #7f53ac,
+  text: #555,
+  white: #fff,
+  gray: #7a7878,
+  light-gray: #f4f4f4,
+  shadow: rgba(0, 0, 0, 0.1)
+);
