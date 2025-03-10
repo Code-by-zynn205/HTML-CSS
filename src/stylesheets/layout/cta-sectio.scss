@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.cta {
+    text-align: center;
+    background-color: #f0f4ff;
+    padding: 40px;
+    border-radius: 10px;
+    height: 350px;
+
+   
+}

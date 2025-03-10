@@ -1,0 +1,19 @@
+{
+  "step": [
+    { "alt" : "coffe",
+      "icon": "/src/assets/icons/coffee.png",
+      "title": "Keşif ve Planlama",
+      "text": "Belirlenen strateji ile tasarımın ve yazılımın oluşturulması sağlanır."
+    },
+    { "alt" : "img1",
+      "icon": "/src/assets/icons/image1.png",
+      "title": "Tasarım ve Geliştirme",
+      "text": "Belirlenen strateji ile tasarımın ve yazılımın oluşturulması sağlanır."
+    },
+    {"alt" : "img",
+      "icon": "/src/assets/icons/image.png",
+      "title": "Test ve Yayına Alma",
+      "text": "Belirlenen strateji ile tasarımın ve yazılımın oluşturulması sağlanır."
+    }
+  ]
+}

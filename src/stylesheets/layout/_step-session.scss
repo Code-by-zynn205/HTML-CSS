@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// 6️⃣ Steps Section
+.steps {
+    padding: 40px 20px;
+    text-align: center;
+  
+    &__numbers {
+      text-align: right;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      padding-right: 90px;
+      color: map-get($colors, gray);
+    }
+    &__container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+  
+    &__item {
+      background-color: map-get($colors, white);
+      padding: 20px;
+      max-width: 280px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      margin: 0 50px; // Tăng khoảng cách ngang giữa các cột
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+  
+  
+      .step__item__background_coffe{
+        width: 60px;
+        height: 60px;
+        background-color: rgba(48, 186, 14, 0.4);
+        @include flex-center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .step__item__background_img1{
+        width: 60px;
+        height: 60px;
+        background-color:rgba(22, 93, 245, 0.4);
+        @include flex-center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .step__item__background_img{
+        width: 60px;
+        height: 60px;
+        background-color:rgba(141, 14, 186, 0.2);
+        @include flex-center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+  
+  
+      .icon {
+        width: 30px;
+        height: 30px;
+        @include flex-center;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+    }
+  }
+  

@@ -1,0 +1,20 @@
+// 1️⃣ Biến màu sắc
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+// 4️⃣ Hero Section
+.hero {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)),
+              url('/src/assets/images/desktop/image.jpg') no-repeat center/cover;
+  padding: 80px 20px 150px;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 400px;
+
+}

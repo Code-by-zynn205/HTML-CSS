@@ -1,0 +1,26 @@
+<div class="steps">
+  <div class="steps__numbers">
+    <span>①</span> <span>②</span> <span>③</span>
+  </div>
+  <p class="steps__subtitle">
+    Neler <a href="#" class="highlight--blue">Yapıyoruz?</a>
+  </p>
+  <h2 class="steps__title">3 adımda çalışma sürecimiz</h2>
+  <p class="steps__description">
+    360° dijital marka danışmanlığı, web tasarım ve reklam ajansıdır.<br>
+    İşletmelerin ihtiyaçlarına uygun web tasarım ve web yazılım hizmetleri sunmaktayız.
+  </p>
+  <div class="steps__container">
+    <each loop="steps in step.step">
+      <div class="steps__item">
+        <div class="step__item__background_{{steps.alt}}">
+          <div class="icon">
+            <img src="{{ steps.icon }}" alt="{{steps.alt}}">
+          </div>
+        </div>
+        <h5 class="steps__item-title">{{ steps.title }}</h5> <!-- Đã sửa -->
+        <p class="steps__item-text">{{ steps.text }}</p> <!-- Đã sửa -->
+      </div>
+    </each>
+  </div>
+</div>
