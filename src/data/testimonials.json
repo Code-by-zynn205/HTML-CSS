@@ -1,0 +1,25 @@
+{
+    "testimonials": [
+        {
+            "avatar": "/src/assets/images/desktop/face.png",
+            "name": "Jane Cooper",
+            "company": "The Walt Disney Company",
+            "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet feugiat donec sit morbi tristique massa enim. Consequat odio adipiscing est odio nibh. Nec scelerisque hendrerit in eu purus faucibus quam. Quis commodo tortor aliquam tortor",
+            "rating": "★★★★★"
+        },
+        {
+            "avatar": "/src/assets/images/desktop/face.png",
+            "name": "John Doe",
+            "company": "ABC Corporation",
+            "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet feugiat donec sit morbi tristique massa enim. Consequat odio adipiscing est odio nibh. Nec scelerisque hendrerit in eu purus faucibus quam. Quis commodo tortor aliquam tortor",
+            "rating": "★★★★★"
+        },
+        {
+            "avatar": "/src/assets/images/desktop/face.png",
+            "name": "Mary Smith",
+            "company": "XYZ Ltd.",
+            "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet feugiat donec sit morbi tristique massa enim. Consequat odio adipiscing est odio nibh. Nec scelerisque hendrerit in eu purus faucibus quam. Quis commodo tortor aliquam tortor",
+            "rating": "★★★★★"
+        }
+    ]
+}
