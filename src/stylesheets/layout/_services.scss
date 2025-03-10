@@ -1,0 +1,129 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.services {
+    width: 100vw;
+    text-align: center;
+    padding: 80px 0;
+
+    &__content {
+        @include flex($align: flex-start, $gap: 155px);
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        @include tablet {
+            @include flex($align: flex-start, $gap: 80px); // Giảm gap cho tablet
+            max-width: 720px; // Phù hợp với tablet
+        }
+
+        @include mobile {
+            @include flex($direction: column, $align: center, $gap: 20px); // Chuyển thành cột dọc
+            max-width: inherit; // Sử dụng max-width từ .container
+        }
+    }
+
+    &__image {
+        img {
+            @include image-style(700px, 600px, 0px, left);
+            padding-top: 48px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            @include tablet {
+                max-width: 400px; // Giảm kích thước cho tablet
+                padding-top: 20px;
+            }
+
+            @include mobile {
+                @include image-style(100%, auto, 10px, all); // Bo góc cả 4 phía trên mobile
+                max-width: 100%; // Chiếm toàn bộ chiều rộng
+                padding-top: 0;
+                margin-bottom: 20px; // Khoảng cách với nội dung
+            }
+            @include tablet {
+                top: 40px; // Giảm top cho tablet
+                max-width: 300px; // Giảm max-width để cân đối
+            }
+    
+            @include mobile {
+                top: 0; // Đặt lại vị trí
+                max-width: 100%; // Chiếm toàn bộ chiều rộng
+                padding: 0 10px; // Giảm padding để phù hợp màn hình nhỏ
+            }
+        }
+    }
+
+    &__list {
+        position: relative;
+        top: 70px;
+        max-width: 400px;
+        width: 100%;
+
+        &-description {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @include tablet {
+            top: 40px; // Giảm top cho tablet
+            max-width: 300px; // Giảm max-width để cân đối
+        }
+
+        @include mobile {
+            top: 0; // Đặt lại vị trí
+            max-width: 100%; // Chiếm toàn bộ chiều rộng
+            padding: 0 10px; // Giảm padding để phù hợp màn hình nhỏ
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 30px;
+
+        &-text {
+            flex: 1;
+        }
+        @include tablet {
+            top: 40px; // Giảm top cho tablet
+            max-width: 300px; // Giảm max-width để cân đối
+        }
+
+        @include mobile {
+            top: 0; // Đặt lại vị trí
+            max-width: 100%; // Chiếm toàn bộ chiều rộng
+            padding: 0 10px; // Giảm padding để phù hợp màn hình nhỏ
+        }
+    }
+}
+
+.first-item-blue-bar {
+    display: block;
+    width: 4px; /* Độ rộng thanh */
+    height: 70%; /* Chiều cao đầy đủ */
+    background-color: #007bff; /* Màu xanh */
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include tablet {
+        top: 40px; // Giảm top cho tablet
+        max-width: 300px; // Giảm max-width để cân đối
+    }
+
+    @include mobile {
+        top: 0; // Đặt lại vị trí
+        max-width: 100%; // Chiếm toàn bộ chiều rộng
+        padding: 0 10px; // Giảm padding để phù hợp màn hình nhỏ
+    }
+}
+.container {
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include mobile {
+        padding: 0 15px;
+        max-width: inherit;
+    }
+}
