@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "title": "Web Tasarım",
+            "description": "Kurumsal kimliğinizi modern bir görünüme kavuşturuyoruz.",
+            "bluebar": "first-item-blue-bar"
+        },
+        {
+            "title": "Dijital Pazarlama",
+            "description": "Web sitenizi en iyi şekilde optimize ediyoruz.",
+            "bluebar": "blue-bar"
+        },
+        {
+            "title": "Prodüksiyon",
+            "description": "İçeriğinizi görsel olarak zenginleştiriyoruz.",
+            "bluebar": "blue-bar"
+        }
+    ]
+}
