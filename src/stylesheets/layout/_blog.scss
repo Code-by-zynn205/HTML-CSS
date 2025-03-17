@@ -7,65 +7,51 @@
     max-width: 100%;
     margin: auto;
     position: relative;
-    background-color:map-get($colors,gray);
+    background-color: map-get($colors, gray);
+
     &__filters {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+        @include flex(center, false, center, center, false, 20px);
         margin-bottom: 30px;
     }
 
     &__filter {
-        border: none;
-        padding: 10px 15px;
-        background: map-get($colors, light-gray);
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: 0.3s ease;
+    border: none;
+    padding: 10px 15px;
+    background: rgba(22, 93, 245, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    color: map-get($colors, white);
 
-        &:hover,
-        &.blog__filter--active {
-            background: map-get($colors, primary);
-            color: map-get($colors, rgb(255, 255, 255));
-        }
+    &:hover,
+    &.blog__filter--active {
+        background: map-get($colors,primary); 
+        color: map-get($colors, white);
     }
+}
+
 
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 5px;
+        gap: 10px;
         position: relative;
-        padding-left: 90px;
-        padding-right: 120px;
+        padding: 0 100px;
     }
 
-    &__button-next  {
+    &__button-next {
         position: absolute;
         right: 65px;
         top: 65%;
         transform: translateY(-50%);
-        border: 2px solid #165DF566;
+        border: 2px solid rgba(22, 93, 245, 0.4);
         background: map-get($colors, third);
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
+        @include flex-center;
     }
-    &__card-link {
-        color:#165DF5;
-        font-size: 18px;
-        text-decoration: none;
-        display: inline-flex;
-        gap: 5px; /* Khoảng cách giữa chữ và mũi tên */
-    }
-    
-    &__card-arrow {
-        font-size: 24px; /* Điều chỉnh kích thước mũi tên */
-    }
-    
 
     &__card {
         background: map-get($colors, white);
@@ -73,18 +59,13 @@
         border-radius: 10px;
         text-align: left;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 270px; // 🔥 Đảm bảo card luôn có kích thước cố định
+        width: 300px;
         margin: auto;
-        
+        @include flex(column, column, center, false, false, false);
 
         &-img {
-            width: 100%;
-            height: 180px;
+            @include image-style(100%, 180px, 8px, false);
             object-fit: cover;
-            border-radius: 8px;
         }
 
         &-category {
@@ -98,10 +79,10 @@
             font-size: 18px;
             padding-bottom: 10px;
         }
-        &-description{
-            font-size: 14px;
-            color:#666666;;
 
+        &-description {
+            font-size: 14px;
+            color: #666;
         }
 
         &-link {
@@ -117,5 +98,80 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    // ✅ TẤT CẢ IPAD ĐỀU CUỘN NGANG
+    @include tablet {
+        padding: 40px 15px;
+
+        &__list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 0 30px;
+            scroll-snap-type: x mandatory;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__card {
+            flex: 0 0 calc(100% / 3 - 20px);
+            min-width: 315px;
+            scroll-snap-align: start;
+        }
+        &__button-next {
+            display: none;
+        }
+        
+        
+    }
+
+    // ✅ MOBILE CŨNG CUỘN NGANG
+    @include mobile {
+        padding: 30px 10px;
+
+        &__list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 0 20px;
+            scroll-snap-type: x mandatory;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__card {
+            min-width: 280px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+       
+            &__filters {
+                @include flex($display: flex, $wrap: nowrap, $gap: 10px, $justify: flex-start);
+                overflow-x: auto;
+                padding: 0 10px;
+                scroll-snap-type: x mandatory;
+        
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        
+            &__filter {
+                flex: 0 0 auto;
+                scroll-snap-align: start;
+                white-space: nowrap;
+            }
+            &__button-next {
+                display: none;
+            }
+        
+        
     }
 }
