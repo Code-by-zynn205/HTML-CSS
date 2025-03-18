@@ -1,0 +1,8 @@
+{
+    "posts": [
+      { "category": "Dijital Pazarlama", "title": "Sosyal CRM Nedir? Sosyal CRM Avantajları Nelerdir?","description":"Sosyal CRM, işletmelerin müşteri ilişkileri yönetimi (CRM) stratejilerini sosyal...", "img": "/src/assets/images/desktop/blog3.jpg", "link": "#" },
+      { "category": "Dijital Pazarlama", "title": "Dijital PR Nedir? Dijital PR Neden Gereklidir?","description":"Dijital PR, sosyal medya platformları ve web siteleri üzerinden işletmelerin...", "img": "/src/assets/images/desktop/blog1.jpg", "link": "#" },
+      { "category": "Kurumsal Kimlik Tasarımı", "title": "Dijital Ajans Nedir? Doğru Dijital Ajans Nasıl Seçilir?","description":"Bir dijital ajans arama motorları, e ticaret, web sitesi tasarımı gibi birçok alanda hizmet...", "img": "/src/assets/images/desktop/blog4.jpg", "link": "#" },
+      { "category": "Dijital Pazarlama", "title": "Online İtibar Yönetimi Nedir?","description":"Online itibar yönetimi, markanızla dijital dünyada ortaya çıkan algıyı profesyonel şekilde yönetmek...", "img": "/src/assets/images/desktop/blog2.jpg", "link": "#" }
+    ]
+  }
