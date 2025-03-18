@@ -1,0 +1,9 @@
+<each loop="post in posts.posts">
+    <article class="blog__card">
+      <img class="blog__card-img" src="{{ post.img }}" alt="{{ post.title }}">
+      <p class="blog__card-category">{{ post.category }}</p>
+      <h5 class="blog__card-title">{{ post.title }}</h5>
+      <span class="blog__card-description">{{ post.description}}</span>
+      <a href="{{ post.link }}" class="blog__card-link">Devamını Oku <span class="blog__card-arrow">»</span></a>
+    </article>
+  </each>

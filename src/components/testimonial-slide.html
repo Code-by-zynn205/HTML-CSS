@@ -1,0 +1,9 @@
+<each loop="testimonial in testimonials.testimonials">
+    <div class="testimonial__slide">
+        <img src="{{ testimonial.avatar }}" alt="{{ testimonial.name }}" class="testimonial__avatar">
+        <h3 class="testimonial__name">{{ testimonial.name }}</h3>
+        <p class="testimonial__company">{{ testimonial.company }}</p>
+        <p class="testimonial__review">{{ testimonial.review }}</p>
+        <div class="testimonial__rating">{{ testimonial.rating }}</div>
+    </div>
+</each>

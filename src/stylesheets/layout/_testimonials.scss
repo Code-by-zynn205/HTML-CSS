@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.testimonial {
+    text-align: center;
+    padding: 60px 20px;
+    background: map-get($colors, background);
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &__slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 200px;
+        justify-content: center;
+         
+    /* Ẩn thanh cuộn */
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE, Edge
+}
+&__slider::-webkit-scrollbar {
+    display: none; // Chrome, Safari
+    }
+
+    &__slide {
+        background: map-get($colors, white);
+        padding: 20px;
+        border-radius: 10px;
+        width: 520px;
+        scroll-snap-align: center;
+        text-align: center;
+        flex-shrink: 0; 
+        display: flex;
+    flex-direction: column;
+    align-items: center; // Căn giữa theo chiều ngang
+    justify-content: center; // Căn giữa theo chiều dọc
+    text-align: center;
+    height: 100%;
+    }
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 10px; // Căn giữa theo chiều ngang
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__company {
+        font-size: 14px;
+        color: map-get($colors, gray);
+    }
+
+    &__review {
+        font-size: 14px;
+        margin: 15px 0;
+        color: map-get($colors, dark-gray);
+    }
+
+    &__rating {
+        font-size: 20px;
+        color: gold;
+    }
+}
